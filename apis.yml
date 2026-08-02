@@ -1,7 +1,27 @@
 aid: this-is-l
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/this-is-l.png
 name: This Is L.
-description: This Is L. is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  This Is L. (L. Inc.) is a personal-care company making certified-organic cotton
+  menstrual products — tampons, pads, and liners — sold through major U.S. retailers
+  including Target, Walmart, Walgreens, CVS, and Kroger as well as direct-to-consumer
+  at thisisl.com. Founded as a social enterprise and public-benefit corporation with a
+  one-for-one give-back model, L. was surfaced in the API Evangelist network as a
+  portfolio company of 500 Global and is now a Procter & Gamble brand (its legal,
+  privacy, and vulnerability-disclosure surfaces resolve to pg.com). This is a consumer
+  packaged-goods e-commerce business with no public developer API, SDK, or technology
+  platform; enrichment captured its identity, web link-properties, and security posture.
 url: https://raw.githubusercontent.com/api-evangelist/this-is-l/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Consumer Packaged Goods
+- E-Commerce
+- Personal Care
+- Menstrual Care
+- Organic
+- Retail
+- Direct to Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,24 @@ maintainers:
 common:
 - type: Website
   url: https://thisisl.com
+- type: TermsOfService
+  url: https://termsandconditions.pg.com/en-us/
+- type: PrivacyPolicy
+  url: https://privacypolicy.pg.com/CHD-en
+- type: Support
+  url: https://www.thisisl.com/contact-us/
+- type: SecurityTxt
+  url: well-known/this-is-l-security.txt
+- type: WellKnown
+  url: well-known/this-is-l-well-known.yml
+- type: DomainSecurity
+  url: security/this-is-l-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/this-is-l-vulnerability-disclosure.yml
+- type: Security
+  url: https://vdp.pg.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
